@@ -24,6 +24,8 @@ Install [itantik/nette-cq-dispatcher](https://github.com/itantik/nette-cq-dispat
 
 ### Example of file structure
 
+Assume that the application service layer has the following file structure:
+
 ```
 - UserService
     - UserCommands.php  // command dispatcher
@@ -204,7 +206,7 @@ Using in controller is not changed. Now each command is executed in database tra
 
 ### Query
 
-Query implements `Itantik\Middleware\IRequest` interface and class name uses `Query` suffix (optional).
+Query implements `Itantik\Middleware\IRequest` interface and class name uses optional `Query` suffix.
 
 ```php
 class FindAllUsersQuery implements IRequest
